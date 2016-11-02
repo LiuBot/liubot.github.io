@@ -1,15 +1,57 @@
+/*The overall nav element should be inline block*/
+  nav { 
+    display: inline-block;
+  }
+  /*We want the list to be inline-block */
+  nav ul li {
+    display: inline-block;
+  }
+  /*We want the anchor links themselves to be block so we can space them out*/
+  nav ul li a{
+    display: block;
+    padding: 20px;
 
+  }
+   nav ul li a:hover{
+    -webkit-filter: brightness(140%);
+    /*Now the navigation links light up when you hover over them :D*/
+  }
+
+  p {
+    width: 700px;
+    display: inline-block;
+  }
+
+
+  aside {
+    width: 180px;
+    display: inline-block;
+    margin-right: 15 px;
+  }
+/*Space out the list elements in the ingredients list with a top and bottom margin of 15px. Space out the directions the same way.*/
+  .ingred-list {
+    width: 200px;
+    display: inline-block;
+    margin-right: 15px 0px; /* 1st number is top/bottom margin */
+  }
+
+  .directions{
+    margin: 15px 0px; /* 1st number is top/bottom margin, 2nd is left/right */
+  }
 
   body {
     /*Select the body element and set the font-family property to "Arial, sans-serif"*/
       background-color: #e7feeb;
       font-family: Arial, sans-serif;
+      width: 900px;
+      margin: 0 auto; /* Trick for centering the body*/
   }
 
   /*Set the font-size to 38px for all H1 elements
   Set the font-size to 32px for all H2 elements*/
   h1 {
     font-size: 38px;
+    text-align: center;
   }
 
   h2 {
@@ -37,6 +79,7 @@
 
   input:last-child{
     background: gold;
+    -webkit-filter: blur(1px);
   }
 
   input:last-child:hover{
@@ -70,6 +113,10 @@
   header > img {
     width: 100px;
   }
+
+  img {
+    display: inline;
+  }
 /*
   * Select all anchor elements within list elements within unordered list elements and remove their unde
   rlines. Also change their color to inherit.*/
@@ -81,3 +128,31 @@
     text-decoration: none;
     color: inherit;
   }
+
+  .reviews label, h3{
+    margin: 20px 30px;
+  }
+
+  /* adds margin for the form */
+  form {
+    margin: 15px 30px;
+  }
+
+  /*Putting input elements in their own row*/
+/*Use the display property to put input elements on their own row. */
+  input[type="text"], textarea{
+    display: block;
+    width: 200px;
+  }
+
+/*At this point it probably looks better to remove the "Cooking Expertise" and "Rating" labels.*/
+  label[id="expertise"], label[id="rating"]{
+    display: none;
+  }
+
+/*Space out the select element with top/bottom margin */
+  select {
+    margin: 10px 0px;
+    width: 200px;
+  }
+
