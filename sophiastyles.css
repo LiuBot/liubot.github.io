@@ -1,0 +1,51 @@
+
+
+  body {
+    /*Select the body element and set the font-family property to "Arial, sans-serif"*/
+      background-color: #e7feeb;
+      font-family: Arial, sans-serif;
+  }
+
+  /*Set the font-size to 38px for all H1 elements
+  Set the font-size to 32px for all H2 elements*/
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  /* Add a class to your unordered list of ingredients called "ingredients-list"
+  /*Add a list-style property with a value of "square inside" to all elements with the "ingredients-list" class
+  */
+
+  .ingredients-list {
+    list-style: square inside;
+  }
+
+  /*Add another list-style of your choosing to all ordered list elements
+
+
+  * Give your whole recipe page a nice background-color*/
+
+  ol {
+      list-style: disc;
+  }
+
+  /** Change the width of the logo image to 100px by selecting all img elements that are immediate childre
+  n of the header element (Hint: Use >)*/
+  header > img {
+    width: 100px;
+  }
+/*
+  * Select all anchor elements within list elements within unordered list elements and remove their unde
+  rlines. Also change their color to inherit.*/
+
+  ul li {
+    color: #258181;
+  }
+  ul li a {
+    text-decoration: none;
+    color: inherit;
+  }

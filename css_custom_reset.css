@@ -1,0 +1,83 @@
+
+
+  body {
+    /*Select the body element and set the font-family property to "Arial, sans-serif"*/
+      background-color: #e7feeb;
+      font-family: Arial, sans-serif;
+  }
+
+  /*Set the font-size to 38px for all H1 elements
+  Set the font-size to 32px for all H2 elements*/
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+/* Set the cursor:pointer and outline:none properties for all radio buttons, select elements, and submit buttons.*/
+   input[type="select"], input[type="submit"]{
+    cursor: pointer;
+    outline: none;
+  }
+
+  input[type="radio"] {
+      -webkit-appearance: none;
+      width: 30px;
+      height: 30px;
+      background-image: url(star.png);
+      vertical-align: bottom;
+  }
+
+  input[type="radio"]:checked{
+    background-position: 30px 30px;
+    background-image: url(gold-star.png)
+  }
+  /*Style the background-color of the submit button gold using the last-child selector and give it a darkening hover effect.*/
+
+  input:last-child{
+    background: gold;
+  }
+
+  input:last-child:hover{
+      -webkit-filter: brightness(90%);
+  }
+
+  /* Add a class to your unordered list of ingredients called "ingredients-list"
+  /*Add a list-style property with a value of "square inside" to all elements with the "ingredients-list" class
+  */
+
+  .ingredients-list {
+    list-style: square inside;
+  }
+
+  /*Add another list-style of your choosing to all ordered list elements
+
+
+  * Give your whole recipe page a nice background-color*/
+
+  ol, .user_review {
+      list-style: disc;
+      border-style:solid;
+      border-color:gold;
+  }
+
+  ol li:nth-of-type(2n){
+    background-color: aquamarine;
+  }
+  /** Change the width of the logo image to 100px by selecting all img elements that are immediate childre
+  n of the header element (Hint: Use >)*/
+  header > img {
+    width: 100px;
+  }
+/*
+  * Select all anchor elements within list elements within unordered list elements and remove their unde
+  rlines. Also change their color to inherit.*/
+
+  ul li {
+    color: #258181;
+  }
+  ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
