@@ -1,0 +1,24 @@
+/* CSS */
+<style>/*child*/
+nav {
+  float: right;
+  background: orange;
+}
+
+section { /*parent*/
+  background: blue;
+}
+
+section:after {
+  content: ""; /* Empty content string */
+  display: block; /* Only block elements can clear */
+  clear: both;
+}
+</style>
+
+/* HTML */
+<section>
+  <nav>
+    Navigation here
+  </nav>
+</section>

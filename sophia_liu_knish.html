@@ -20,14 +20,14 @@
 
   <script src="external_javascript_example.js"></script>
   <link rel="stylesheet" href="css_custom_reset.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="custom_grid.css">
 
 
   </head>
-
   <!-- Body starts right outside the head -->
 <body>
-    <a href= "https://www.appacademy.io/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Appacademylogo.png/175px-Appacademylogo.png"
-                alt="illuminati" width="50px" height="auto">
+    <header class="cf"><a href= "https://www.appacademy.io/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Appacademylogo.png/175px-Appacademylogo.png"
+                alt="illuminati" width="80px" height="auto"></a></div>
 
   <nav>
 
@@ -39,16 +39,17 @@
       <li><a href="#eatingknishes">How do I eat it?</a></li>
     </ul>
   </nav>
+  </header>
 
 
   <a name="top-of-page"/>
   <h1>Knishes - the Authentic, Fabulous, East-Coast version</h1>
 
-<section class="ingred-list">
+<section class="ingred-list col-1-3">
   <h3>Ingredients</h3>
   <a name="Ingredients"></a>
   <aside>
-  <ul class="ingredients-list">
+  <ul>
     <li>7 baking potatoes, peeled and cubed</li>
     <li>1/4 cup vegetable oil</li>
     <li>2 onions, chopped</li>
@@ -61,31 +62,39 @@
     <li>2 egg yolks</li>
     <li>2 tablespoons milk</li>
   </ul>
+  <h4>Did you know?</h4><p class="fact">There are places where you can buy knishes in San Francisco, including Miller's East Coast Deli and Shorty Goldestein's.</p>
 </aside>
 </section>
-  <img src="http://atmedia.imgix.net/2f83f8e40997e121d2ee743a5f8c74e7949d46a2?auto=compress&w=1200.0&fit=max"
-       alt="Delicious knishes" width="600px" height="auto">
-<section>
+
+<!-- KNISH IMAGE -->
+
+<!--   <aside class="col col-1-3 fact"><h4>Did you know?</h4><p>There are places where you can buy knishes in San Francisco, including Miller's East Coast Deli and Shorty Goldestein's.</p>
+  </aside> -->
+<!-- HISTORY -->
+<section class="col col-2-3"><img class="pic" src="http://atmedia.imgix.net/2f83f8e40997e121d2ee743a5f8c74e7949d46a2?auto=compress&w=1200.0&fit=max"
+  alt="Delicious knishes"></section>
+<section class="col col-2-3">
+
   <h2>History of the Knish</h2>
   <a name="history"></a>
   <p>
      If you're from New York, chances are you've had a knish before, and know that's an ultimate form of Jewish soul food. When did America come to enjoy delicious knishes? Sometime around 1900, Eastern European immigrants brought knishes to North America, and in particular, New York. They were especially prominent on the Lower East Side of Manhattan and the boardwalks of Brooklyn. The aforementioned immigrants usually sold it from pushcarts and baskets. "Knish" is actually a Yiddish word derived from "knysh" in Ukranian. Not totally sure what it translates to, probably "pure deliciousness."  <a href="https://en.wikipedia.org/wiki/Knish#History">Wikipedia History</a>
   </p>
-  <img src="http://www.thejewishweek.com/sites/default/files/user6269/rsz_schimmel-gwenael_piaser.jpg"
-       alt="Delicious knishes" width="600px" height="auto">
-</section>
+  <img class="pic" src="http://www.thejewishweek.com/sites/default/files/user6269/rsz_schimmel-gwenael_piaser.jpg"
+       alt="Delicious knishes">
+</section >
 
-<section>
-  <h2>What's a Knish?</h2>
+<section class="col col-2-3"> 
   <a name="whatisit"></a>
+  <h2>What's a Knish?</h2>
+   
   <p> CARB HEAVEN. A knish is a pillow of dough, usually stuffed with oniony mashed potatoes. They can have sweet or savory fillings, including potato, mushroom, spinach, sweet cheese, or fruit fillings. For some reason, the square ones are generally potato with a crispy exterior.
       <a href="http://www.thekitchn.com/whats-a-knish-food-history-205340">Thekitchn's Guide to Knishes</a>
-  </p>
-  <aside><h4>Did you know?</h4><p>There are places where you can buy knishes in San Francisco, including Miller's East Coast Deli and Shorty Goldestein's.</p>
-  </aside>
-</section>
+  </p></section>
 
-<section class="directions">
+
+
+<section class="directions col col-2-3">
   <h2>Directions</h2>
   <a name="Directions"></a>
 
@@ -113,21 +122,21 @@
       Bake in the preheated oven until golden brown, 35 to 45 minutes.
     </li>
   </ol>
-  <figure><img src= "http://static1.squarespace.com/static/54dd7886e4b0324687ad077b/5589a33be4b075cc911fe4aa/5589a341e4b0cab142a47b2a/1435083588876/IMG_2629.JPG" width="auto" height="400px">
-  <figcaption>Tip: the dough should have a bit of resistance when you poke it with your finger, as described <a href = "http://www.noshoakland.com/blog/2015/6/23/delishes-knishes</figcaption">here.</a></figure>
+  <figure><img class="pic" src= "http://static1.squarespace.com/static/54dd7886e4b0324687ad077b/5589a33be4b075cc911fe4aa/5589a341e4b0cab142a47b2a/1435083588876/IMG_2629.JPG">
+  <figcaption><strong>Tip:</strong> the dough should have a bit of resistance when you poke it with your finger, as described <a href = "http://www.noshoakland.com/blog/2015/6/23/delishes-knishes</figcaption">here.</a></figure>
 </section>
 
-  <section>
+  <section class="col col-2-3">
     <h2>How do I eat it?</h2>
     <a name="eatingknishes"></a>
     <p>
       For non-New Yorkers, a knish may not be a self explanatory snack. Do you eat it cold? Hot? Dipped in sauce? The answer's simple: hot and plain! If it's not already served piping hot, heat that ish up and place directly into your mouth.
     </p>
-    <img src = "https://media.giphy.com/media/dJCXSZMdSdb44/giphy.gif">
+    <img class="pic" src = "https://media.giphy.com/media/dJCXSZMdSdb44/giphy.gif">
   </section>
 
 <!-- Review section-->
-  <section id = "reviews" class="user_review">
+  <section id = "reviews" class="user_review col col-2-3">
     <h3>Review this recipe!</h3>
     <form action="/reviews" id="review-form" method="post">
       <label for = "name">Name:</label>
@@ -157,7 +166,7 @@
 </section>
 
 
-  <footer>
+  <footer class="col col-2-3">
     <p>This recipe was originally published <a href = "http://allrecipes.com/recipe/212834/sarahs-knish/">here.</a></p>
     <p>
       Do you have delicious, authentic New York recipes to share? E-mail them to us at   <a href="nonexistent_email_address@gmail.com">our totally legitimate company e-mail address.</a>
