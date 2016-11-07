@@ -77,7 +77,7 @@ with a class attribute containing 'col-' */
     top: 40px;
     right:5px; /* this is relative to the hamburger dropdown icon*/
     flex-direction: column;
-    /* display flex children as a stack of columns*/
+    /* display flex children as a single column*/
     cursor: pointer;
     box-shadow: black 5px 5px 10px;
     /*horizontal offset, vertical offset, blur distance*/
@@ -85,8 +85,7 @@ with a class attribute containing 'col-' */
 
   .hamburger-dropdown:hover ul{
     display:flex;
-    /* display: flex makes children/parents into flex items*/;
+   /* enables a flex context for all its direct children*/
     background: ghostwhite;
-    }
   }
-}
+
