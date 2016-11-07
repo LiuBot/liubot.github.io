@@ -20,45 +20,44 @@
   p {
     /*width: 700px;*/
     display: inline-block;
-    font-size: 2vmin;
+    font-size: 16px;
   }
 
 
   aside {
-    /*width: 180px;*/
     display: inline-block;
-    margin-right: 15 px;
   }
 /*Space out the list elements in the ingredients list with a top and bottom margin of 15px. Space out the directions the same way.*/
-  .ingred-list{
+  .ingred-list, .fact{
     display: inline-block;
+  }
+  .ingred-list li{
+    margin: 5px 0px; /* 1st number is top/bottom margin, 2nd is left/right */
   }
 
    .fact {
-    float: right;
-    margin: 0px 7px; /* 1st number is top/bottom margin */
+    margin: 5px 0px; /* 1st number is top/bottom margin */
   }
 
-  .directions{
-    margin: 15px 0px; /* 1st number is top/bottom margin, 2nd is left/right */
-  }
 
   body {
     /*Select the body element and set the font-family property to "Arial, sans-serif"*/
+      line-height:1.5;
       background-color: #e7feeb;
       font-family: Arial, sans-serif;
       margin: 0 auto; /* Trick for centering the body*/
+      width: 66%;
   }
 
   /*Set the font-size to 38px for all H1 elements
   Set the font-size to 32px for all H2 elements*/
   h1 {
-    font-size: 4vw;
+    font-size: 32px;
     text-align: center;
   }
 
   h2 {
-    font-size: 2.5.0vh;
+    font-size: 24px;
   }
 /* Set the cursor:pointer and outline:none properties for all radio buttons, select elements, and submit buttons.*/
    input[type="select"], input[type="submit"]{
@@ -104,8 +103,6 @@
 
   .user_review {
       list-style: disc;
-      border-style:solid;
-      border-color:aquamarine;
   }
 
   ol li:nth-of-type(2n){
@@ -128,6 +125,8 @@
   ul li a {
     text-decoration: none;
     color: inherit;
+    line-height:1.5;
+
   }
 
   a{
@@ -136,7 +135,7 @@
 
   .reviews label, h3, h4{
     margin: 20px 30px;
-    font-size:2.2vw;
+    font-size:24px;
   }
 
   /* adds margin for the form */
@@ -161,4 +160,5 @@
     margin: 10px 0px;
     width: 200px;
   }
+
 

@@ -16,16 +16,15 @@ with a class attribute containing 'col-' */
 .col-1-3 {
 	float:left;
 	width:30%;
-	padding-left: 10px;
+	padding-left: 20px;
  }
 
 .col-2-3{
 	width:66%;
-	float:right;
+  float:right;
 }
 
   .cf:after{
-    float: left;
     content: "";
     display: block;
     clear:both;
@@ -36,3 +35,58 @@ with a class attribute containing 'col-' */
   	width:100%;
   	box-sizing: border-box;
   }
+
+
+/*Positioning and Media Queries*/
+
+/*By default, the hamburger drop down does not show up*/
+.hamburger-dropdown{ 
+  display:none;
+}
+/*Buuuuut if the screen size is no greater than 499 px, it will appear, among other things*/
+
+
+@media all and (max-width: 1150px){
+
+ .col-1-3, .col-2-3{
+  width:100%;
+ }
+
+  nav ul{ /* the regular nav bar disappears at this max width*/
+    display: none;
+  }
+
+  .hamburger-dropdown {
+    display: block;
+    position: fixed;
+  }
+
+  .hamburger-dropdown > li{
+    background: url("./hamburger.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    position:relative;
+    cursor: pointer;
+  }
+
+  .hamburger-dropdown ul{
+    position: absolute; /* choose absolute so it's in front of static
+    elements in the background */
+    top: 40px;
+    right:5px; /* this is relative to the hamburger dropdown icon*/
+    flex-direction: column;
+    /* display flex children as a stack of columns*/
+    cursor: pointer;
+    box-shadow: black 5px 5px 10px;
+    /*horizontal offset, vertical offset, blur distance*/
+  }
+
+  .hamburger-dropdown:hover ul{
+    display:flex;
+    /* display: flex makes children/parents into flex items*/;
+    background: ghostwhite;
+    }
+  }
+}
